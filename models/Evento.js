@@ -1,7 +1,8 @@
+import { DataTypes } from 'sequelize';
 const { DataTypes } = require('sequelize');
 const sequelize = '../config/DataBase';
 
-const Evento = sequelize.define('Evento', {
+const Evento = sequelize.require('Evento', {
   event_id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
